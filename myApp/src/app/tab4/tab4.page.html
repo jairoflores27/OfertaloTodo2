@@ -1,0 +1,30 @@
+<ion-content padding text-center>
+    <ion-header>
+      <ion-toolbar>
+        
+        <ion-title>Login</ion-title>  
+        
+      </ion-toolbar>
+    </ion-header>
+  <ion-list>
+       <ion-item>
+  <ion-input name="email" type ="email" placeholder="Correo"  ngModel required></ion-input>
+       </ion-item>
+     <ion-item>
+<ion-input name="password" type="password" placeholder="Contraseña"  ngModel required ></ion-input>
+
+     </ion-item>
+  </ion-list>
+ <ion-button  color="success" full (click)="Ingresar()"expand="full" fill="solid">Ingresar</ion-button>
+    <ion-toolbar>
+ 
+    </ion-toolbar>
+
+    <ion-row>
+      <div text-center>
+    ¿No tienes una cuenta? <a  routerLink="/registro">
+      Registrate</a> 
+      </div>
+    </ion-row>
+
+</ion-content>

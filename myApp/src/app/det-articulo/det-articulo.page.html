@@ -1,0 +1,110 @@
+<app-header titulo="Detalles del Articulo"></app-header>
+
+<ion-content>
+    <ion-grid fixed > 
+     
+              
+          <ion-row  >
+            
+            <ion-col size="12" size-md="6">
+               <ion-card>
+                <ion-chip>
+                    <ion-avatar>
+                      <img src="assets/img/perfil.svg">
+                    </ion-avatar>
+                <ion-label>Yordan lópez</ion-label>   
+                   </ion-chip>
+                <a routerLink="/compra" ><img src="assets/img/lapto.jpg" /></a>
+            </ion-card>
+              </ion-col>                    
+               
+                 
+                <ion-col size="12" size-md="3">
+                    
+                        <ion-card-header>  
+                                    <ion-card-subtitle  style="text-align: center">Datos del articulo</ion-card-subtitle> 
+                                </ion-card-header>
+                    <ion-item>     
+                        <ion-label position="floating">Nombre del articulo:</ion-label>                        
+                        <ion-input></ion-input>
+                    </ion-item>
+                    <ion-item>     
+                        <ion-label position="floating">Descripcion:</ion-label>
+                        
+                        <ion-textarea placeholder="descripccion del articulo...."></ion-textarea>
+                    </ion-item>
+                    <ion-item>     
+                        <ion-label position="floating">Precio:</ion-label>
+                      
+                        <ion-input></ion-input>
+                    </ion-item>
+                                         
+                    <ion-item>     
+                        <ion-label position="floating">Fecha de publicacion:</ion-label>                        
+                        <ion-input></ion-input>
+                    </ion-item>
+                    <ion-item>     
+                        <ion-label position="floating">Cantidad:</ion-label>
+                        
+                        <ion-input type="number"></ion-input>
+                    </ion-item>
+                    <ion-item>     
+                        <ion-label position="floating">Precio por unidad:</ion-label>
+                        <ion-input type="number"></ion-input>
+                    </ion-item>
+                    <ion-item>     
+                        <ion-label position="floating">Total</ion-label>
+                        <ion-input type="number"></ion-input>
+                    </ion-item>
+                                     
+                </ion-col>
+               
+                <ion-col size="12" size-md="3">
+                      
+                    <ion-card-header>  
+                                <ion-card-subtitle  style="text-align: center">Datos del Vendedor</ion-card-subtitle> 
+                            </ion-card-header>
+                <ion-item>     
+                    <ion-label position="floating">Nombre </ion-label>                        
+                    <ion-input></ion-input>
+                </ion-item>
+                <ion-item>     
+                    <ion-label position="floating">Apellido:</ion-label>
+                    
+                    <ion-input></ion-input>
+                </ion-item>
+                <ion-item>     
+                    <ion-label position="floating">Reputacion:</ion-label>
+                  
+                    <ion-input></ion-input>
+                </ion-item>
+                                     
+                <ion-item>     
+                    <ion-label position="floating">Ventas realizadas con exito:</ion-label>                        
+                    <ion-input type="number"></ion-input>
+                </ion-item>
+                <ion-item>     
+                    <ion-label position="floating">Correo:</ion-label>
+                    
+                    <ion-input type="number"></ion-input>
+                </ion-item>
+                <ion-item>     
+                    <ion-label position="floating">telefono</ion-label>
+                    <ion-input type="number"></ion-input>
+                </ion-item>
+                  
+                   <ion-button (click)="presentAlert()">
+                     <ion-icon name="cart"></ion-icon>
+                     <ion-label>+Añadir carrito</ion-label>
+                   </ion-button>  
+                   <ion-button routerLink="/det-carrito">
+                      <ion-icon name="eye"></ion-icon>
+                      <ion-label>Ver carrito</ion-label>
+                    </ion-button>                        
+              
+              
+            </ion-col>
+         
+          </ion-row>
+          </ion-grid> 
+</ion-content>

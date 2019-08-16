@@ -1,0 +1,57 @@
+<app-header titulo="Detalles del Carito"></app-header>
+<ion-content>
+    <ion-grid fixed>
+      <ion-row>
+        <ion-col  size-md="1"  align-self-center>#</ion-col>
+        <ion-col  size-md="2" align-self-center>Articulo</ion-col>
+        <ion-col  size-md="2" align-self-center>Cantidad</ion-col>
+        <ion-col  size-md="2" align-self-center>Precio</ion-col>
+        <ion-col  size-md="2" align-self-center>Sub-Total</ion-col>
+        <ion-col  size-md="2" align-self-center>Acción</ion-col>
+        <hr/><hr/>
+      </ion-row>
+      <ion-row  >
+          <ion-col borde="1px"  size-md="1" align-self-center>1</ion-col>
+          <ion-col  size-md="2" align-self-center> 
+             <p>Lapto Lenovo</p>
+            <a routerLink="/compra" ><img src="assets/img/lapto.jpg" /></a>           
+          </ion-col>
+          <ion-col  size-md="2" align-self-center>2 unidades</ion-col>
+          <ion-col  size-md="2" align-self-center>5004200</ion-col>
+          <ion-col  size-md="2" align-self-center>100008400</ion-col>
+          <ion-col  size-md="2" align-self-center>
+             
+            <ion-button>
+               <ion-icon name="close-circle"></ion-icon>
+              Quitar</ion-button>
+          </ion-col>
+          <hr />
+        </ion-row>
+        <ion-row>
+            <ion-col  size-md="1" align-self-center>2</ion-col>
+            <ion-col  size-md="2" align-self-center>
+              <p>Computadora Intel 7</p>
+                <a routerLink="/compra" ><img src="assets/img/intel7.jpg"/></a>
+                
+            </ion-col>
+            <ion-col  size-md="2" align-self-center>1 unidades</ion-col>
+            <ion-col  size-md="2" align-self-center>7000520</ion-col>
+            <ion-col  size-md="2" align-self-center>7000520</ion-col>
+            <ion-col  size-md="2" align-self-center>
+                
+                <ion-button>
+                  <ion-icon name="close-circle"></ion-icon>
+                  Quitar
+                </ion-button>
+              </ion-col>
+          </ion-row>
+     <ion-item-divider  > 
+        <h2 color="black">Total Bs: 17008920 </h2> 
+        <ion-button slot="end" shape="round" expand="full"  >
+              <ion-icon name="cart"></ion-icon>
+              <ion-label>comprar</ion-label>
+            </ion-button>
+    </ion-item-divider>
+        </ion-grid>
+   
+</ion-content>

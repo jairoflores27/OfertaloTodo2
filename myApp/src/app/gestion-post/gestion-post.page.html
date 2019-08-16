@@ -1,0 +1,58 @@
+<app-header titulo="Publicar"></app-header>
+
+<ion-content>
+<!-- Default Input  fixed= fijo-->
+
+      <ion-col size="12" size-md="6">
+<ion-card>
+   
+  <ion-card-header> 
+    <ion-card-subtitle  style="text-align: center">Datos de Publicacion</ion-card-subtitle> 
+</ion-card-header>
+
+<ion-item>
+  <ion-label position="floating">Especificacones<ion-text color="danger">*</ion-text></ion-label>
+  
+  <ion-textarea></ion-textarea>
+</ion-item>
+<ion-item>
+    <ion-label position="floating">Estado<ion-text color="danger">*</ion-text></ion-label>
+    
+    <ion-textarea></ion-textarea>
+  </ion-item>
+  <ion-item>
+      <ion-label position="floating">Ciudad<ion-text color="danger">*</ion-text></ion-label>
+      
+      <ion-textarea></ion-textarea>
+    </ion-item>
+
+<ion-item>
+  <ion-label  >Categoria<ion-text color="danger">*</ion-text></ion-label>
+
+  <ion-select >
+    <ion-select-option value="celulares">Celulares</ion-select-option>
+    <ion-select-option value="laptos">Laptos</ion-select-option>
+    <ion-select-option value="computadora">PC</ion-select-option>
+  </ion-select>
+</ion-item>
+<ion-item>
+  
+    <ion-label >Imagenes:  <ion-text color="danger">* </ion-text></ion-label>
+    
+    <ion-input type="file"></ion-input>
+
+  </ion-item>
+<ion-item>
+    <ion-label position="floating" >Precio<ion-text color="danger">*</ion-text></ion-label>
+    <ion-input type="number"></ion-input>
+  </ion-item>
+</ion-card>
+<ion-button  expand="full" color="primary" shape="round" title="Comprar" >
+    <ion-icon slot="start" name="redo"></ion-icon>
+     Publicar
+</ion-button>
+</ion-col>
+
+
+
+</ion-content>

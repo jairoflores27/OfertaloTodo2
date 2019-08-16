@@ -1,0 +1,127 @@
+  <!--  
+   -->   
+  <app-header titulo="perfil"></app-header>
+<ion-content>
+        
+        <ion-grid> 
+          <ion-card>
+                
+            <ion-row  > 
+                    
+              <ion-col  size="5" size-md="4">  
+          <div class="">                     
+          <ion-avatar >
+              <img style=" margin-left: 20px; " src="assets/img/perfil.jpg">      
+             
+        <ion-button (click)="openCamera()"> 
+          <ion-icon name="camera"></ion-icon>
+          <ion-label>Foto</ion-label>
+         
+        </ion-button>        
+        </ion-avatar>
+      </div>  
+     
+            </ion-col>
+           
+      <ion-col size="7" size-md="8">
+         
+          <h5 class="ion-text-center">Reputación </h5>
+          <ion-item-divider>
+            <ion-input id="radio1"  name="estrellas" >  
+                <ion-label color="warning">★</ion-label>                
+            </ion-input>
+            <ion-input id="radio2" type="radio" name="estrellas" >  
+                <ion-label color="warning">★</ion-label>
+            </ion-input>
+            <ion-input id="radio3" type="radio" name="estrellas" >  
+                <ion-label color="warning">★</ion-label>
+            </ion-input>
+            <ion-input id="radio4" type="radio" name="estrellas" >  
+                <ion-label color="warning">★</ion-label>
+            </ion-input>
+            <ion-input id="radio5" type="radio" name="estrellas" >  
+                <ion-label for="radio5">★</ion-label>
+            </ion-input>
+            
+          </ion-item-divider>
+          <h6 class="ion-text-center">Votos 4.0/5 </h6>
+        
+        </ion-col>
+        
+      </ion-row>
+    </ion-card>
+      <ion-row> 
+        <ion-col  size="12" size-md="6">  
+          <ion-card> 
+<ion-card-header> 
+            <ion-card-subtitle  style="text-align: center">Datos personales</ion-card-subtitle> 
+        </ion-card-header>
+             
+      
+      <ion-item>     
+          <ion-label position="floating">Nombre:</ion-label>
+          <ion-icon slot="start" name="person"></ion-icon>
+          <ion-input></ion-input>
+      </ion-item>
+      <ion-item>     
+          <ion-label position="floating">Apellido:</ion-label>
+          <ion-icon slot="start" name="person"></ion-icon>
+          <ion-input></ion-input>
+      </ion-item>
+      <ion-item>     
+          <ion-label position="floating">Correo:</ion-label>
+          <ion-icon slot="start" name="mail"></ion-icon>
+          <ion-input></ion-input>
+      </ion-item>
+      <ion-item>     
+          <ion-label position="floating">Telf:</ion-label>
+        <ion-icon slot="start"  name="call" item-start></ion-icon> 
+          <ion-input></ion-input>
+            
+      </ion-item>
+      <ion-item>     
+          <ion-label position="floating">Direccion:</ion-label>
+          <ion-icon slot="start" name="pin"></ion-icon>
+          <ion-input></ion-input>
+      </ion-item>  
+           
+    </ion-card>
+    <ion-item-divider class=""> 
+
+  <ion-button  shape="round"  slot="end" size="small" shape >
+        <ion-icon name="save"></ion-icon>
+        <ion-label>Guarda Cambios</ion-label>
+      </ion-button>
+    </ion-item-divider>
+ 
+  </ion-col>
+  <ion-col  size="12" size-md="6">  
+  <ion-card> 
+      <ion-card-header>  
+          <ion-card-subtitle  style="text-align: center">Datos de la cuenta</ion-card-subtitle> 
+        
+
+      </ion-card-header>
+      <ion-item>     
+          <ion-label position="floating">Nombre de Usuario:</ion-label>
+          <ion-icon slot="start"  name="person" item-start></ion-icon> 
+          <ion-input></ion-input>
+      </ion-item>
+      <ion-item>     
+          <ion-label position="floating">Clave:</ion-label>
+          <ion-icon slot="start"  name="lock"></ion-icon>
+          <ion-input type="password" ></ion-input>
+      </ion-item>
+     
+  </ion-card>
+     <ion-item-divider  > 
+
+          <ion-button slot="end" shape="round" size="small" shape >
+                <ion-icon name="save"></ion-icon>
+                <ion-label>Guardar cambios</ion-label>
+              </ion-button>
+     </ion-item-divider>
+    </ion-col>
+    </ion-row>
+  </ion-grid> 
+</ion-content>

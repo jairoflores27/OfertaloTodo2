@@ -1,0 +1,53 @@
+<app-header titulo="compra"></app-header>
+
+<ion-content>
+<h1></h1>
+<ion-card>
+    
+        <ion-card-subtitle  style="text-align: center">Referencias de envio</ion-card-subtitle> 
+      <ion-item>     
+        <ion-label position="floating">Estado<ion-text color="danger">*</ion-text></ion-label>
+        <ion-input></ion-input>             
+    </ion-item>
+    <ion-item>     
+        <ion-label position="floating">Ciudad<ion-text color="danger">*</ion-text></ion-label>
+        <ion-input></ion-input>        
+    </ion-item>
+    <ion-item>     
+        <ion-label position="floating">Codigo postal<ion-text color="danger">*</ion-text></ion-label>
+        <ion-input></ion-input>
+    </ion-item>    
+      
+    <ion-item>     
+        <ion-label position="floating">Direccion envio<ion-text color="danger">*</ion-text> </ion-label>
+        
+        <ion-input></ion-input>
+    </ion-item>
+    <ion-card-subtitle  style="text-align: center">Informacion de pago</ion-card-subtitle>
+    <ion-item>
+        <ion-label  >Tipo pago:<ion-text color="danger">*</ion-text></ion-label>
+      
+        <ion-select >
+          <ion-select-option value="celulares">Crédito</ion-select-option>
+          <ion-select-option value="laptos">Débito</ion-select-option>
+          <ion-select-option value="computadora">MasterCard</ion-select-option>
+        </ion-select>
+      </ion-item>
+    <ion-item>     
+        <ion-label position="floating">Nro Tarjeta de credito<ion-text color="danger">*</ion-text></ion-label>
+        <ion-input></ion-input>
+    </ion-item> 
+    <ion-item>     
+        <ion-label position="floating">Monto a pagar<ion-text color="danger">*</ion-text></ion-label>
+    
+        <ion-input></ion-input>
+    </ion-item>    
+</ion-card>
+<ion-item-divider  > 
+
+    <ion-button slot="end" shape="round" expand="full"  >
+          <ion-icon name="save"></ion-icon>
+          <ion-label>Pagar</ion-label>
+        </ion-button>
+</ion-item-divider>
+</ion-content>

@@ -1,0 +1,116 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+     <!-- <ion-button (click)="toggleMenu()">
+        <ion-icon slot="icon-only" name="menu"></ion-icon>
+      </ion-button>-->
+<ion-menu-button color="primary" menu="primerMenu"></ion-menu-button>
+
+    </ion-buttons>
+    <ion-title>
+     OfertaloTodo
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-toolbar>
+    <ion-searchbar  color="blue" role="banner"class="nav-header nav-header-plus" (ionInput)="getItems($event)"></ion-searchbar>
+    <ion-list>
+      <ion-item *ngFor="let item of items">
+        {{ item }}
+      </ion-item>
+    </ion-list>
+    </ion-toolbar>
+
+<ion-slides pager="true" >
+  <ion-slide class="img">
+    
+      <img src="/assets/img/publicidad.png" alt="" />
+     
+    
+  </ion-slide>
+ 
+  
+  
+      <ion-slide class="img">
+    <img src="/assets/img/imagen.png" alt="" />
+ 
+  </ion-slide>
+  
+  <ion-slide class="img"> 
+        <div >
+      <img src="/assets/img/pagofacil.png" alt="" />
+      <h3>Comprar es mas fácil</h3>
+    </div>
+  </ion-slide>
+</ion-slides>
+
+<ion-item>
+    
+  <ion-card >
+      
+           <a routerLink="/compra" ><img src="assets/img/laptop.png" width="10px" height="60px"/></a>
+           <ion-card-header>
+             <ion-card-subtitle>Nuevo</ion-card-subtitle>
+             <span> Bs.</span>
+             <span>2504000</span> 
+                                   
+               <span> lenovo Procesador I5</span>                       
+           
+           </ion-card-header>
+
+         </ion-card>
+
+         <ion-card >
+      
+            <a routerLink="/compra" ><img src="assets/img/play.png" width="10px" height="60px"/></a>
+            <ion-card-header>
+              <ion-card-subtitle>Nuevo</ion-card-subtitle>
+              <span> Bs.</span>
+              <span>4504000</span> 
+                                    
+               
+                <span> Playstation 4 500GB</span>                       
+            
+            </ion-card-header>
+ 
+          </ion-card>
+
+
+        </ion-item>
+
+ <ion-item>
+    
+        <ion-card >
+    <a routerLink="/compra" ><img src="assets/img/ipad.png" width="2px" height="60px"/></a>
+    <ion-card-header>
+      <ion-card-subtitle>Nuevo</ion-card-subtitle>
+      <span> Bs.</span>
+      <span>3100000</span> 
+                              
+       
+      <span> Ipad con wifi</span>                       
+    
+    </ion-card-header>
+
+</ion-card>
+
+   <ion-card >
+    <a routerLink="/compra" ><img src="assets/img/j7.jpg" width="9px" height="70px"/></a>
+    <ion-card-header>
+      <ion-card-subtitle>Nuevo</ion-card-subtitle>
+      <span> Bs.</span>
+      <span>2090000</span> 
+                              
+      <span> Samsung J7 16gb</span>                       
+  
+    </ion-card-header>
+
+
+  </ion-card>
+  
+</ion-item>
+
+
+  </ion-content>

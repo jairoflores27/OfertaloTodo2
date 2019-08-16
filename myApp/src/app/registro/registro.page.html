@@ -1,0 +1,49 @@
+
+<ion-content >
+    <ion-header>
+     <ion-toolbar>  
+    
+        
+           
+         <ion-buttons slot="start">
+             <ion-back-button defaultHref="tab4"></ion-back-button>
+           </ion-buttons>
+          <ion-title>Ingresa tus datos</ion-title>
+        
+         
+          
+           
+     
+     </ion-toolbar>
+   </ion-header>
+         
+       
+   
+       <ion-list>
+           
+           <ion-item>
+               <ion-input type="text" name="Nombre" placeholder="Nombre"  ></ion-input>
+                    </ion-item>
+                  <ion-item>
+             <ion-input type="text" name="Apellido" placeholder="Apellido"   ></ion-input>
+             
+                  </ion-item>    
+                  <ion-item>
+                     <ion-input  name="email" type ="email" placeholder="Correo"  ngModel required></ion-input>
+                          </ion-item>   
+            
+                          <ion-item>
+                             <ion-input  expand="medium"  name="Contraseña" type ="password" placeholder="Contraseña"  ngModel required></ion-input>
+                                  </ion-item> 
+                                  <ion-item>
+                                     <ion-input  expand="medium"  name="Contraseña" type ="password" placeholder="Confirmar Contraseña"  ngModel required></ion-input>
+                                          </ion-item> 
+           
+                                  
+                                     
+   <ion-button color="" expand="full" fill="solid">Registrar</ion-button> 
+                                     
+                                   
+                               
+      </ion-list>
+   </ion-content>

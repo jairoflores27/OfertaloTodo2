@@ -1,0 +1,17 @@
+ [
+    {
+       "icon":"eye",
+       "name":"Publicar Articulo",
+        "redirectTo":"/gestion-post"
+    },
+    {
+        "icon":"person",
+        "name":"Perfil",
+         "redirectTo":"/perfil"
+     },
+     {
+        "icon":"clipboard",
+        "name":"Categoria",
+         "redirectTo":"#"
+     }
+ ]
