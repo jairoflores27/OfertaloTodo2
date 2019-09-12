@@ -11,7 +11,7 @@
      },
      {
         "icon":"clipboard",
-        "name":"Categoria",
-         "redirectTo":"#"
+        "name":"Registrar Categoria",
+         "redirectTo":"/registrar-categ"
      }
  ]

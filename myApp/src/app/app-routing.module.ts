@@ -9,7 +9,9 @@ const routes: Routes = [
   { path: 'det-articulo', loadChildren: './det-articulo/det-articulo.module#DetArticuloPageModule' },
   { path: 'det-carrito', loadChildren: './det-carrito/det-carrito.module#DetCarritoPageModule' },
   { path: 'tab4', loadChildren: './tab4/tab4.module#Tab4PageModule' },
-  { path: 'registro', loadChildren: './registro/registro.module#RegistroPageModule' }
+  { path: 'registro', loadChildren: './registro/registro.module#RegistroPageModule' },  { path: 'registrar-categ', loadChildren: './registrar-categ/registrar-categ.module#RegistrarCategPageModule' },
+  { path: 'lista-categ', loadChildren: './lista-categ/lista-categ.module#ListaCategPageModule' }
+
 ];
 @NgModule({
   imports: [
